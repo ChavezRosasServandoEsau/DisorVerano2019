@@ -50,7 +50,7 @@ namespace Fibonacci.Logica
                         this.feliz = false;
                         int sumatoriaCuadrados = 0;
                         for (int d = 0; d < cadenaValor.Length; d++ ) {
-                        sumatoriaCuadrados += Int32.Parse(cadenaValor.Substring(d, 1))^2;                                              
+                            sumatoriaCuadrados += Int32.Parse(cadenaValor.Substring(d, 1)) * Int32.Parse(cadenaValor.Substring(d, 1));                                              
                         }
                         cadenaValor = sumatoriaCuadrados.ToString();
 
