@@ -1,0 +1,8 @@
+C:\Users\Esau\Desktop\Fibonacci\Fibonacci\bin\Debug\Fibonacci.exe.config
+C:\Users\Esau\Desktop\Fibonacci\Fibonacci\bin\Debug\Fibonacci.exe
+C:\Users\Esau\Desktop\Fibonacci\Fibonacci\bin\Debug\Fibonacci.pdb
+C:\Users\Esau\Desktop\Fibonacci\Fibonacci\obj\Debug\Fibonacci.csprojResolveAssemblyReference.cache
+C:\Users\Esau\Desktop\Fibonacci\Fibonacci\obj\Debug\Fibonacci.exe
+C:\Users\Esau\Desktop\Fibonacci\Fibonacci\obj\Debug\Fibonacci.pdb
+C:\Users\Esau\Desktop\Fibonacci\Fibonacci\obj\Debug\Fibonacci.InterfazGrafica.Paneles.PanelFibonacci.resources
+C:\Users\Esau\Desktop\Fibonacci\Fibonacci\obj\Debug\Fibonacci.csproj.GenerateResource.Cache

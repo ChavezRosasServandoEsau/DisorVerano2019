@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0014684C-E3BD-4438-9412-DAD10803833E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fibonacci</RootNamespace>
+    <AssemblyName>Fibonacci</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Controls.Ribbon" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Windows.Input.Manipulations" />
+    <Reference Include="System.Windows.Presentation" />
+    <Reference Include="System.Workflow.Activities" />
+    <Reference Include="System.Workflow.ComponentModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Excepciones\MenorqueCero.cs" />
+    <Compile Include="InterfazGrafica\AntesObjetos\AnteriorPadovan.cs" />
+    <Compile Include="InterfazGrafica\AntesObjetos\AntesFibonacci.cs" />
+    <Compile Include="InterfazGrafica\Botones\BotonAnterior\BottonAnterior.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InterfazGrafica\Botones\BotonAudio\BottonAudioBinario.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InterfazGrafica\Botones\BotonAudio\BottonAudioDecimal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InterfazGrafica\Botones\BotonAudio\BottonAudioHexadecimal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InterfazGrafica\Botones\BotonAudio\BottonAudioPadovan.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InterfazGrafica\Botones\BotonAudio\BottonAudioUlam.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InterfazGrafica\Botones\BotonSiguiente\BottonSiguiente.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InterfazGrafica\Botones\BottonAnteriorGeneral\BottonAnterior.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InterfazGrafica\Botones\BottonSiguientePadovan.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InterfazGrafica\Botones\BottonSiguienteUlam.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InterfazGrafica\Etiquetas\EtiquetaBinaria\LabelBinaria.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InterfazGrafica\Etiquetas\EtiquetaCapicua\LabelCapicua.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InterfazGrafica\Etiquetas\EtiquetaDecimal\LabelDecimal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InterfazGrafica\Etiquetas\EtiquetaFeliz\LabelNumeroFeliz.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InterfazGrafica\Etiquetas\EtiquetaHexadecimal\LabelHexadecimal.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InterfazGrafica\Paneles\PanelFibonacci.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InterfazGrafica\Paneles\PanelNumeroDeLaSuerte.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InterfazGrafica\Paneles\PanelNumeroPadovan.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InterfazGrafica\Paneles\PanelNumeroUlam.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Logica\Capicua.cs" />
+    <Compile Include="Logica\DelaSuerte.cs" />
+    <Compile Include="Logica\NumeroBinario\NumeroBinario.cs" />
+    <Compile Include="InterfazGrafica\Ventanas\VentanaPrincipal\VentanaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logica\NumeroFeliz.cs" />
+    <Compile Include="Logica\NumeroFibonacci\NumeroFibonacci.cs" />
+    <Compile Include="Logica\NumeroHexadecimal.cs" />
+    <Compile Include="Logica\Padovan.cs" />
+    <Compile Include="Logica\Ulam.cs" />
+    <Compile Include="Logica\SerieFibonacci\SerieFibonacci.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="InterfazGrafica\Paneles\PanelFibonacci.resx">
+      <DependentUpon>PanelFibonacci.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
